@@ -1,0 +1,47 @@
+package com.jsp.dao;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityTransaction;
+
+import com.jsp.entity.Student;
+import com.jsp.entity.Subject;
+
+public class StubjectDaoImplementation implements SubjectDao{
+
+	@Override
+	public Subject saveSubject(Subject subject) {
+		EntityManager entityManager=entityManagerFactory.createEntityManager();
+		EntityTransaction entityTransaction=entityManager.getTransaction();
+		entityTransaction.begin();
+		entityManager.persist(subject);
+		entityTransaction.commit();
+		return subject;
+	}
+
+	@Override
+	public Subject findSubjectById(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Subject> findAllSubject() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Student updateSubject(Subject subject) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteSubject(Subject subject) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,15 @@
+package com.jsp.dao;
+
+import java.util.List;
+
+import com.jsp.entity.Student;
+import com.jsp.entity.Subject;
+
+public interface StudentDao {
+	public boolean saveStudent();
+	public int updateStudent(int id);
+	public boolean addSubject();
+	public Student getStudentById();
+	public List<Subject> getAllSubject();
+	public 
+	

@@ -1,0 +1,11 @@
+package com.jsp.inter;
+
+public class Apple implements Mobile{
+
+	@Override
+	public void call() {
+		// TODO Auto-generated method stub
+		System.out.println("apple");
+	}
+
+}

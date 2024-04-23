@@ -1,0 +1,19 @@
+package com.jsp.service;
+
+import com.jsp.dao.SubjectDao;
+import com.jsp.entity.Subject;
+
+public class SubjectService {
+
+	private SubjectDao dao;
+	
+	public Subject saveSubject(Subject subject) {
+		try {
+			return dao.saveSubject(subject);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+//			e.printStackTrace();
+			return null;
+		}
+	}
+}

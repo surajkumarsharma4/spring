@@ -1,0 +1,7 @@
+package com.jsp.error;
+
+public class StudentException extends Exception {
+	public String er() {
+		return "error";
+	}
+}

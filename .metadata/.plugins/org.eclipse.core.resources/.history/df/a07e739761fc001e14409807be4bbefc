@@ -1,0 +1,14 @@
+package com.jsp.inter;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Samsung implements Mobile{
+
+	@Override
+	public void call() {
+		// TODO Auto-generated method stub
+		System.out.println("samsung");
+	}
+	
+}

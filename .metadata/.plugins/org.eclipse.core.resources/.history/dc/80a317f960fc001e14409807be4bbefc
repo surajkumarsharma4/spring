@@ -1,0 +1,11 @@
+package com.jsp.inter;
+
+public class Samsung implements Mobile{
+
+	@Override
+	public void call() {
+		// TODO Auto-generated method stub
+		System.out.println("samsung");
+	}
+	
+}

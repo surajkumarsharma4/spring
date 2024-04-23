@@ -1,0 +1,5 @@
+package com.jsp.error;
+
+public class StudentException extends Exception {
+
+}

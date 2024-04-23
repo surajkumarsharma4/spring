@@ -1,0 +1,8 @@
+package com.jsp.entity;
+
+public class Subject {
+	private int id;
+	private String subjectName;
+	private int marks;
+	private Student student;
+}

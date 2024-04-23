@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+            
+            <bean id="myMobile" class="com.jsp.Mobile">
+            	<constructor-arg name="id" value="11"/>
+            	<constructor-arg name="brand" value="redmi"/>
+            </bean>
+            
+         <bean id="myBike" class="com.jsp.Bike">
+         	<constructor-arg name="name" value="ktm"/>
+         	<constructor-arg name="company" value="hero"/>
+         	<constructor-arg name="list" >
+         		<list>
+					<value>100</value>
+					<value>hello</value>
+					<value>4685638</value>
+					<value>akjsdsfj</value>
+				</list>
+         	</constructor-arg>
+         	<constructor-arg name="set">
+         	<set>
+					<value>634</value>
+					<value>xhksa</value>
+					<value>3463463463</value>
+					<value>suraj</value>
+				</set>
+         	</constructor-arg>
+         	<constructor-arg name="a">
+         		<array>
+				<value>12</value>
+				<value>5</value>
+				<value>7</value>
+			</array>
+         	</constructor-arg>
+         	<constructor-arg name="map">
+         	<map>
+					<entry key="1" value="suraj" />
+					<entry key="2" value="kumar" />
+					<entry key="3" value="sharma" />					
+				</map>
+         	</constructor-arg>
+         	<constructor-arg name="mobile" ref="myMobile">
+         	
+         	</constructor-arg>
+         
+         </bean>
+ </beans>

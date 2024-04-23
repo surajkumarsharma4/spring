@@ -1,0 +1,13 @@
+package com.jsp.service;
+
+import com.jsp.dao.SubjectDao;
+import com.jsp.entity.Subject;
+
+public class SubjectService {
+
+	private SubjectDao dao;
+	
+	public Subject addSubject() {
+		
+	}
+}

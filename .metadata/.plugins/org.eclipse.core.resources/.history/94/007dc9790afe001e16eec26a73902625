@@ -1,0 +1,14 @@
+package com.jsp.dao;
+
+import java.util.List;
+
+import com.jsp.entity.Student;
+import com.jsp.entity.Subject;
+
+public interface SubjectDao {
+	public Subject saveSubject(Subject Subject);
+	public Subject findSubjectById(int id);
+	public List<Subject> findAllSubject();
+	public Student updateSubject(Subject);
+	public void deleteSubject(Subject Subject);
+}
